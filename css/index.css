@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1080px;
+}
+
+a {
+    text-decoration:none;
+    out-line: none;
+    color: #fff;
+}
+
+.header {
+    background: gray;
+    height: 50px;
+}
+
+/* 圣杯布局 左右定宽 */
+/* .container{
+    padding-left: 300px;
+    padding-right: 300px;
+    background: #3daeb1;
+    overflow: hidden;
+}
+
+.center, .left, .right {
+    float: left;
+    position: relative;
+}
+
+.center {
+    width: 100%;
+    background: #b5e4e5;
+}
+
+.center div {
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left {
+    width: 300px;
+    margin-left: -100%;
+    left: -300px;
+}
+
+.right {
+    width: 300px;
+    right: -300px;
+    margin-left: -300px;
+} */
+
+/* 中间定宽 两侧同宽自适应 */
+.container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #3daeb1;
+}
+
+.center {
+    width: 1080px;
+    background: #b5e4e5;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.center div {
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.left {
+    width: calc((100% - 1080px)/2) ;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.right {
+    width: calc((100% - 1080px)/2) ;
+    height: 100%;
+    position: absolute;
+    right: 0 ;
+    top: 0;
+}
+
+.footer {
+    clear: both;
+    background: grey;
+    height: 100px;
+}
+
+div.nav {
+    position: fixed;
+    bottom: 40%;
+    right: 50px;
+    background: #3daeb1;
+    text-align: center;
+    z-index: 99;
+    border: 1px solid #fff;
+}
+
+div.nav a,
+div.nav div {
+    display: block;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.on, .linkActive {
+    background: #b5e4e5;
+}

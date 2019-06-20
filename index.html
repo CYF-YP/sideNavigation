@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>侧边导航</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="header"></div>
+        <div class="container">
+            <!-- 圣杯布局 两侧定宽 -->
+            <!-- <div class="center">
+                <div id="link1">1</div>
+                <div id="link2">2</div>
+                <div id="link3">3</div>
+                <div id="link4">4</div>
+                <div id="link5">5</div>
+            </div>
+            <div class="left"></div>
+            <div class="right"></div> -->
+
+            <!-- 中间定宽 -->
+            <div class="left"></div>
+            <div class="center">
+                <div id="link1">1</div>
+                <div id="link2">2</div>
+                <div id="link3">3</div>
+                <div id="link4">4</div>
+                <div id="link5">5</div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="footer"></div>
+        <div class="nav" id="navigation">
+            <a href="#link1">link1</a>
+            <a href="#link2">link2</a>
+            <a href="#link3">link3</a>
+            <a href="#link4">link4</a>
+            <a href="#link5">link5</a>
+            <!-- 返回顶部 -->
+            <div class="backTop" style="color: #fff;">TOP</div>
+        </div>
+    </div>
+    <script>
+        // 导航
+        $(".backTop").click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 1000);
+            return false;
+        });
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
